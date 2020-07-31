@@ -81,6 +81,7 @@ if __name__ == '__main__':
                 else:
                     chart_title += item+' vs. '
             plt.title(chart_title)
+            plt.savefig(chart_title+'.png')
 
 
     readFromFile('xbox_ps4_2013-2020.csv') # video game console
