@@ -52,8 +52,7 @@ if __name__ == '__main__':
                         count += 1
                     i += 1
             # build line charts from data
-            # plt.figure()
-            fig, ax = plt.subplots()
+            fig, ax = plt.subplots(figsize=(8, 8))
             count = 0
             for item in data:
                 if count == 0:
@@ -72,7 +71,7 @@ if __name__ == '__main__':
             for n, label in enumerate(ax.xaxis.get_ticklabels()):
                 if n % 10 != 0:
                     label.set_visible(False)
-            plt.xticks(rotation=50)
+            plt.xticks(rotation=25)
             plt.xlabel(date[0][:4]+' - '+date[-1][:4])
             chart_title = ''
             for item in category:
@@ -95,21 +94,21 @@ if __name__ == '__main__':
     # Looking at the marketshare, the PlayStation 4 has a 52 percent market share,
     # the Switch sits at 25 percent,
     # and the Xbox One 23 percent.
-    plt.figure()
+    plt.figure(figsize=(8, 8))
     labels = ['Playstation 4', 'Xbox One', 'Switch']
     data = [106.99, 46.36, 50.51]
     plt.bar(np.arange(len(labels)), data, align='center', alpha=0.5, label=labels)
-    plt.xticks(np.arange(len(labels)), labels, rotation=30)
+    plt.xticks(np.arange(len(labels)), labels, rotation=25)
     plt.ylabel('Units Sold in Millions')
     plt.title('Video Game Console Lifetime Sales')
 
 
     # Epic Games had 61 million monthly users, 13 million average concurrent player count
     # Steam had 95 million, between 14 and 20 million concurrent player count
-    plt.figure()
+    plt.figure(figsize=(8, 8))
     labels = ['Epic Monthly Users', 'Steam Monthly Users', 'Epic Concurrent', 'Steam Concurrent']
     data = [61, 95, 13, 17]
     plt.bar(np.arange(len(labels)), data, align='center', alpha=0.5, label=labels)
-    plt.xticks(np.arange(len(labels)), labels, rotation=30)
+    plt.xticks(np.arange(len(labels)), labels, rotation=25)
     plt.ylabel('in Millions')
     plt.title('PC Gaming Platform Users 2019')
