@@ -24,6 +24,10 @@ Option 2:
 - Run the code
 
 
+Currently the program will read data from the csv files,
+process it, create line and bar charts, and save them as images
+in the same folder as main.py
+
 !!If you do not have python installed on your machine,
 !!or have any trouble running the code, please let
 !!us know and we will figure out another way
