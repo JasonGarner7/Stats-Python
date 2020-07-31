@@ -101,6 +101,7 @@ if __name__ == '__main__':
     plt.xticks(np.arange(len(labels)), labels, rotation=25)
     plt.ylabel('Units Sold in Millions')
     plt.title('Video Game Console Lifetime Sales')
+    plt.savefig('Console-Lifetime-Sales.png')
 
 
     # Epic Games had 61 million monthly users, 13 million average concurrent player count
@@ -112,3 +113,4 @@ if __name__ == '__main__':
     plt.xticks(np.arange(len(labels)), labels, rotation=25)
     plt.ylabel('in Millions')
     plt.title('PC Gaming Platform Users 2019')
+    plt.savefig('PC-Monthly-And-Concurrent-Users.png')
